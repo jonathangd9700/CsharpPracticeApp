@@ -28,7 +28,7 @@ namespace FirstApp
                 con.Open();
                 read = com.ExecuteReader();
                 //LEER LECTOR
-                while (read.Read()) ;
+                while (read.Read())
                 {
                     Discos aux = new Discos();
                     aux.id = read.GetInt32(0);

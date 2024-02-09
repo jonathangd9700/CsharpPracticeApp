@@ -1,6 +1,6 @@
 ﻿namespace FirstApp
 {
-    partial class Form1
+    partial class frmDiscos
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -28,33 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.dgvDiscos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDiscos)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // dgvDiscos
             // 
-            this.button1.Location = new System.Drawing.Point(124, 94);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.dgvDiscos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDiscos.Location = new System.Drawing.Point(145, 45);
+            this.dgvDiscos.Name = "dgvDiscos";
+            this.dgvDiscos.Size = new System.Drawing.Size(495, 308);
+            this.dgvDiscos.TabIndex = 1;
             // 
-            // Form1
+            // frmDiscos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Controls.Add(this.dgvDiscos);
+            this.Name = "frmDiscos";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmDiscos_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDiscos)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DataGridView dgvDiscos;
     }
 }
 

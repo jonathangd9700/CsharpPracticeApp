@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace FirstApp
 {
-    public partial class Form1 : Form
+    public partial class frmDiscos : Form
     {
-        public Form1()
+        public frmDiscos()
         {
             InitializeComponent();
+        }
+
+        private void frmDiscos_Load(object sender, EventArgs e)
+        {
+            DiscosData discosData = new DiscosData();
+            dgvDiscos.DataSource = discosData.listar();
         }
     }
 }

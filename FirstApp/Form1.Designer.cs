@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.dgvDiscos = new System.Windows.Forms.DataGridView();
+            this.picBoxAlbum = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiscos)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxAlbum)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvDiscos
@@ -39,17 +41,29 @@
             this.dgvDiscos.Name = "dgvDiscos";
             this.dgvDiscos.Size = new System.Drawing.Size(495, 308);
             this.dgvDiscos.TabIndex = 1;
+            this.dgvDiscos.SelectionChanged += new System.EventHandler(this.dgvDiscos_SelectionChanged);
+            // 
+            // picBoxAlbum
+            // 
+            this.picBoxAlbum.Location = new System.Drawing.Point(745, 45);
+            this.picBoxAlbum.Name = "picBoxAlbum";
+            this.picBoxAlbum.Size = new System.Drawing.Size(264, 308);
+            this.picBoxAlbum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picBoxAlbum.TabIndex = 2;
+            this.picBoxAlbum.TabStop = false;
             // 
             // frmDiscos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1094, 450);
+            this.Controls.Add(this.picBoxAlbum);
             this.Controls.Add(this.dgvDiscos);
             this.Name = "frmDiscos";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmDiscos_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDiscos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxAlbum)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -57,6 +71,7 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvDiscos;
+        private System.Windows.Forms.PictureBox picBoxAlbum;
     }
 }
 

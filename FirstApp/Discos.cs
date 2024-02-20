@@ -15,5 +15,7 @@ namespace FirstApp
 
         public int cantidadCanciones { get; set; }
 
+        public string urlImagenTapa {  get; set; }
+
     }
 }

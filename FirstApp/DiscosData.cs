@@ -22,7 +22,7 @@ namespace FirstApp
             {
                 con.ConnectionString = "server=.\\SQLEXPRESS; database=DISCOS_DB; integrated security = true";
                 com.CommandType = System.Data.CommandType.Text;
-                com.CommandText = "SELECT Id, Titulo, CantidadCanciones, UrlImagenTapa from DISCOS";
+                com.CommandText = "SELECT D.Id, Titulo, CantidadCanciones, UrlImagenTapa, E.Descripcion as Edicion, T.Descripcion as TipoEdicion from DISCOS D, ESTILOS E, TIPOSEDICION T where D.IdEstilo = E.Id And  D.IdTipoEdicion = t.Id";
                 com.Connection = con;
 
                 con.Open();
@@ -35,6 +35,10 @@ namespace FirstApp
                     aux.titulo = (string)read["Titulo"];
                     aux.cantidadCanciones = read.GetInt32(2);
                     aux.urlImagenTapa = (string)read["UrlImagenTapa"];
+                    aux.Edicion = new Estilos();
+                    aux.TipoEdicion = new Estilos();
+                    aux.Edicion.Descripcion = (string)read["Edicion"];
+                    aux.TipoEdicion.Descripcion = (string)read["TipoEdicion"];
 
                     lista.Add(aux);
                 }

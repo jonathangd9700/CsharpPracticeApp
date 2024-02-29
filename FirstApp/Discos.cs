@@ -17,5 +17,8 @@ namespace FirstApp
 
         public string urlImagenTapa {  get; set; }
 
+        public Estilos Edicion { get; set; }
+        public Estilos TipoEdicion { get; set; }
+
     }
 }

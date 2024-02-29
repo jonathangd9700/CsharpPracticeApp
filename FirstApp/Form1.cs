@@ -24,6 +24,7 @@ namespace FirstApp
             DiscosData discosData = new DiscosData();
             discosList = discosData.listar();
             dgvDiscos.DataSource = discosList;
+            dgvDiscos.Columns["UrlImagenTapa"].Visible = false;
             loadImage(discosList[0].urlImagenTapa);
         }
 

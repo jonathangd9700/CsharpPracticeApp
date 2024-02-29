@@ -39,13 +39,13 @@
             this.dgvDiscos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDiscos.Location = new System.Drawing.Point(145, 45);
             this.dgvDiscos.Name = "dgvDiscos";
-            this.dgvDiscos.Size = new System.Drawing.Size(495, 308);
+            this.dgvDiscos.Size = new System.Drawing.Size(601, 308);
             this.dgvDiscos.TabIndex = 1;
             this.dgvDiscos.SelectionChanged += new System.EventHandler(this.dgvDiscos_SelectionChanged);
             // 
             // picBoxAlbum
             // 
-            this.picBoxAlbum.Location = new System.Drawing.Point(745, 45);
+            this.picBoxAlbum.Location = new System.Drawing.Point(843, 45);
             this.picBoxAlbum.Name = "picBoxAlbum";
             this.picBoxAlbum.Size = new System.Drawing.Size(264, 308);
             this.picBoxAlbum.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -56,7 +56,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1094, 450);
+            this.ClientSize = new System.Drawing.Size(1134, 463);
             this.Controls.Add(this.picBoxAlbum);
             this.Controls.Add(this.dgvDiscos);
             this.Name = "frmDiscos";
